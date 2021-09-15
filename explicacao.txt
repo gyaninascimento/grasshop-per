@@ -1,0 +1,83 @@
+FUNÇÃO
+drawBox() é uma função. Uma função diz a um computador para fazer uma determinada coisa. As funções podem receber argumentos para fornecer informações extras ao computador. Por exemplo, drawBox(red) tem red como seu argumento, isso diz ao computador que ele deve desenhar uma caixa vermelha.
+
+CÓDIGO DE EXEMPLO
+drawBox(blue);
+drawBox() é o nome da função. Ao adicionar blue entre parênteses (), você está chamando a função com o argumento blue. Este código cria uma caixa azul.
+
+ARGUMENTO
+Um argumento é uma informação extra fornecida a uma função que diz como ela deve ser executada.
+
+Os argumentos são colocados entre parênteses de uma chamada de função.
+
+Nem todas as funções requerem argumentos e algumas funções requerem vários argumentos.
+
+CÓDIGO DE EXEMPLO
+drawBox(red);
+print('hello');
+Neste exemplo, red é o argumento para a função drawBox(). Ele diz à função para desenhar uma caixa vermelha.
+
+'hello' é o argumento para a função print(). Ele diz à função o que deve ser impresso.
+
+VARIÁVEIS
+Variáveis são muito comuns na programação. Elas permitem que você faça referência à mesma informação várias vezes. Em JavaScript, as variáveis podem ser definidas usando var e dando à variável um nome exclusivo. Por exemplo, var myVariable = 'some text'. A variável pode posteriormente receber um novo valor. Por exemplo, myVariable = 'changed some text' Ao reatribuir uma variável, var não é necessário
+
+CÓDIGO DE EXEMPLO
+var myExample;
+myExample = 'I created a variable';
+print(myExample);
+myExample = 'I changed the value';
+print(myExample);
+A variável myExample é declarada, na linha seguinte ela recebe um valor e então é impressa. O valor da variável é então atualizado e impresso novamente com uma mensagem diferente.
+
+ARRAY
+Em JavaScript, uma array é uma lista de itens. Os itens podem ser diferentes tipos de dados: números, strings e até mesmo outras arrays. Uma array dentro de outra array é chamada de aninhamento de arrays.
+
+drawBox() é uma função. Uma função diz a um computador para fazer uma determinada coisa. As funções podem receber argumentos para fornecer informações extras ao computador. Por exemplo, drawBox(red) tem red como seu argumento, isso diz ao computador que ele deve desenhar uma caixa vermelha.
+
+CÓDIGO DE EXEMPLO
+drawBox(blue);
+drawBox() é o nome da função. Ao adicionar blue entre parênteses (), você está chamando a função com o argumento blue. Este código cria uma caixa azul.
+
+CÓDIGO DE EXEMPLO
+var exampleArray = ['blue', 'orange', 5, 10, [50, 10]];
+exampleArray tem 5 itens. Ela contém strings, números e uma array; que tem dois itens que são números.
+
+STRING
+
+Letras, palavras e frases são chamadas de strings na programação. As aspas são usadas para mostrar o início e o fim de uma string. Por exemplo, 'hello world' é uma string.
+
+CÓDIGO DE EXEMPLO
+drawBoxes('royg');
+'royg' é uma string usada na função drawBoxes() para criar caixas vermelhas, laranja, amarelas e verdes.
+
+IF
+As if statements permitem que você execute uma seção específica do código quando um teste for verdadeiro. O código entre parênteses () é o teste. Se o teste for verdadeiro, o código dentro do bloco {} será executado. Se o teste não for verdadeiro, o código dentro do bloco não será executado.
+
+CÓDIGO DE EXEMPLO
+var aNumber = 5;
+if (aNumber === 5) {
+    drawBox(blue);
+}
+if (aNumber === 4) {
+    drawBox(red);
+}
+Nesse exemplo, a variável aNumber recebe o número 5. Existem duas if statements. A primeira é verificar se aNumber é igual a 5. A segunda é verificar se é igual a 4. Apenas o primeiro teste if statement é verdadeiro, então seria desenhada uma caixa azul.
+
+OPERADOR DE IGUALDADE
+Compara se duas coisas são iguais entre si.
+
+CÓDIGO DE EXEMPLO
+print(10 === 5);
+print(5 === 5);
+Esse código primeiro verifica se 10 é igual a 5. Como 10 é diferente de 5, é impresso false. O código então verifica se 5 é igual a 5. Como 5 é igual a 5, é impresso true.
+
+BLOCO DE CÓDIGO
+Uma sequência de comandos agrupados dentro de chaves {}.
+
+CÓDIGO DE EXEMPLO
+if (learningToCode === 'fun') {
+    print('Coding is awesome!');
+    print('I want to solve more puzzles!');
+}
+Se a variável learningToCode for igual a 'fun', o código dentro do bloco de código {} será executado.
