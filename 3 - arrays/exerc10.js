@@ -7,19 +7,18 @@ Use indexação da array para criar um quadriculado.
 Atualize os números em drawBox(colors[]) de modo que 0 seja preto e 1 seja branco */
 
 var colors = [
-    'black',
-    'white',
-    ___
-  ];
-  drawBox(colors[0]);
-  drawBox(colors[1]);
-  drawBox(colors[1]);
-  newLine();
-  drawBox(colors[0]);
-  drawBox(colors[1]);
-  drawBox(colors[1]);
-  newLine();
-  drawBox(colors[0]);
-  drawBox(colors[1]);
-  drawBox(colors[1]);
-  ___
+  'black',
+  'white',
+  
+];
+drawBox(colors[0]);
+drawBox(colors[1]);
+drawBox(colors[1]);
+newLine();
+drawBox(colors[0]);
+drawBox(colors[1]);
+drawBox(colors[1]);
+newLine();
+drawBox(colors[0]);
+drawBox(colors[1]);
+drawBox(colors[1]);

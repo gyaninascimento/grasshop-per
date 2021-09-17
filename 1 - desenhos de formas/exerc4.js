@@ -7,4 +7,3 @@ Atualize a função drawBoxes() para finalizar a bandeira do Gabão.
 Edite a string para ter 3 letras para cada listra, com um espaço entre cada uma das cores: verde, amarelo e azul */
 
 drawBoxes('ggg yyy bbb');
-___

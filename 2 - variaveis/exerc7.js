@@ -11,4 +11,3 @@ Imprima a variável usando print(day). */
 var month = 'August';
 var day = 'Friday';
 print(day);
-___

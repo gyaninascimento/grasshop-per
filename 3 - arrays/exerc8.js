@@ -8,6 +8,6 @@ var answer = pickRandom([
     'yes',
     'no',
     'maybe',
-    ___
+
   ]);
   print(answer);

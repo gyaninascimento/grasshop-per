@@ -19,5 +19,4 @@ newLine();
 drawBox(blue);
 drawBox(blue);
 drawBox(blue);
-___
 

@@ -33,18 +33,69 @@ A variável myExample é declarada, na linha seguinte ela recebe um valor e ent�
 ARRAY
 Em JavaScript, uma array é uma lista de itens. Os itens podem ser diferentes tipos de dados: números, strings e até mesmo outras arrays. Uma array dentro de outra array é chamada de aninhamento de arrays.
 
+CÓDIGO DE EXEMPLO
+var exampleArray = ['blue', 'orange', 5, 10, [50, 10]];
+exampleArray tem 5 itens. Ela contém strings, números e uma array; que tem dois itens que são números.
+
+INDEXAÇÃO DE ARRAY
+Na maioria das linguagens de programação, incluindo JavaScript, as arrays são indexadas a partir de 0. O primeiro item em uma array tem o índice 0. Por exemplo, myArray[0] acessa o primeiro item. Enquanto myArray[3] acessa o 4º item.
+
+CÓDIGO DE EXEMPLO
+var groceries = ['apples', 'bananas', 'oranges']; 
+var fruit = groceries[1];
+A variável fruit contém o segundo item da array, que é 'bananas'.
+
+ESTRUTURA DE DADOS
+Estruturas de dados são maneiras de armazenar e organizar dados mais complexos do que apenas um único valor primitive. Em JavaScript, os tipos de estrutura de dados mais comuns são arrays e objects.
+
+CÓDIGO DE EXEMPLO
+var vegetables = ['broccoli', 'carrots', 'spinach'];
+var groceries = {
+    numberOfApples: 5,
+    numberOfBananas: 5,
+    vegetables: vegetables
+};
+Observe que um objeto pode conter arrays e vice-versa. Nesse caso, groceries.vegetables seria igual à variável vegetables.
+
+EXPRESSÃO DE FUNÇÃO
+Executa uma sequência de comandos quando chamada. Ela tem três partes:
+O valor do identificador (o nome da função)
+Os parâmetros ou argumentos (os valores entre parênteses)
+O corpo da função, que é a sequência de comandos executados quando a função é chamada.
+CÓDIGO DE EXEMPLO
+var printSum = function(num1, num2) { print(num1 + num2); }; printSum(5, 2);
+Quando printSum(5, 2) é chamado, será impresso 7 na área de saída.
+
+FUNCTION() {}
+Uma função salva um bloco de código. É possível executá-lo sempre que fizer referência ao nome da função. O código dentro do bloco {} será executado quando o nome da função for chamado.
+
+CÓDIGO DE EXEMPLO
+function printSum(num1, num2) {
+    print(num1 + num2);
+}
+printSum(5, 2); 
+A palavra-chave function cria uma nova função chamada printSum() que recebe dois argumentos. Quando printSum() é chamada, ela soma os dois argumentos.
+
+() => {}
+Uma função de seta é uma forma compacta de criar uma nova função. Ela usa () => {} em vez da palavra-chave function. Também não precisa de um nome. A melhor prática é usar => em vez da palavra-chave function.
+
+CÓDIGO DE EXEMPLO
+var add = (num1, num2) => { 
+    return num1 + num2; 
+};
+
+console​.log(add(5, 3));
+add() aceita dois números como argumentos e os adiciona.
+
+DRAWBOX
 drawBox() é uma função. Uma função diz a um computador para fazer uma determinada coisa. As funções podem receber argumentos para fornecer informações extras ao computador. Por exemplo, drawBox(red) tem red como seu argumento, isso diz ao computador que ele deve desenhar uma caixa vermelha.
 
 CÓDIGO DE EXEMPLO
 drawBox(blue);
 drawBox() é o nome da função. Ao adicionar blue entre parênteses (), você está chamando a função com o argumento blue. Este código cria uma caixa azul.
 
-CÓDIGO DE EXEMPLO
-var exampleArray = ['blue', 'orange', 5, 10, [50, 10]];
-exampleArray tem 5 itens. Ela contém strings, números e uma array; que tem dois itens que são números.
 
 STRING
-
 Letras, palavras e frases são chamadas de strings na programação. As aspas são usadas para mostrar o início e o fim de uma string. Por exemplo, 'hello world' é uma string.
 
 CÓDIGO DE EXEMPLO
@@ -72,6 +123,110 @@ print(10 === 5);
 print(5 === 5);
 Esse código primeiro verifica se 10 é igual a 5. Como 10 é diferente de 5, é impresso false. O código então verifica se 5 é igual a 5. Como 5 é igual a 5, é impresso true.
 
+OPERADOR É DIFERENTE DE!==
+Compara se duas coisas (por exemplo, números, variáveis, etc.) são diferentes.
+
+CÓDIGO DE EXEMPLO
+print(10 !== 5);
+print(5 !== 5);
+Esse código primeiro verifica se 10 é diferente de 5. Como 10 é diferente de 5, é impresso true. O código então verifica se 5 é diferente de 5. Como 5 é igual a 5, é impresso false.
+ 
+ OPERADOR DE COMPARAÇÃO
+ ===
+Compara se duas coisas são iguais entre si.
+
+CÓDIGO DE EXEMPLO
+print(10 === 5);
+print(5 === 5);
+Esse código primeiro verifica se 10 é igual a 5. Como 10 é diferente de 5, é impresso false. O código então verifica se 5 é igual a 5. Como 5 é igual a 5, é impresso true.
+
+MENOR OU IGUAL QUE <=
+Compara se um valor é menor ou igual a outro. Isso funciona para tipos de número e string, bem como alguns outros tipos menos óbvios, como uma array.
+
+CÓDIGO DE EXEMPLO
+if (5 <= 5) {
+    print('Will this print?');
+}
+Ele será impresso, porque 5 é igual a 5.
+
+MAIOR OU IGUAL QUE >=
+Compara se um valor é maior ou igual a outro. Isso funciona para tipos de número e string, bem como alguns outros tipos menos óbvios, como uma matriz.
+if (5 >= 6) {
+    print('Will this print?');
+}
+Não será impresso, porque 5 não é maior nem igual a 6.
+
+MENOR QUE <
+Compara se o lado esquerdo é menor que o lado direito.
+
+CÓDIGO DE EXEMPLO
+if ('apples' < 'bananas') {
+    print('Will this print?');
+}
+Será impresso porque o 'b' em 'bananas' é alfabeticamente 'greater' que o 'a' em 'apples'.
+
+OPERADOR DE MAIS +
+Soma dois valores. Esse operador é mais comumente usado em números e strings.
+
+CÓDIGO DE EXEMPLO
+var result = 10 + 5;
+var fullName = 'Johnny' + ' Appleseed';
+O valor de result é 15. O operador + pode combinar strings, então o valor de fullName é 'Johnny Appleseed'.
+
+OPERADOR MENOS -
+Subtrai o valor do lado direito do operador - do valor do lado esquerdo.
+
+CÓDIGO DE EXEMPLO
+var result = 10 - 5;
+result conterá o número 5
+
+OPERADOR MULTIPLICAÇÃO *
+Multiplica o valor do lado esquerdo pelo valor do lado direito.
+
+CÓDIGO DE EXEMPLO
+var result = 10 * 5;
+10 é multiplicado por 5. A variável result contém o número 50.
+
+OPERAÇÃO DIVISÃO/
+Divide o valor do lado esquerdo do operador / pelo valor do lado direito.
+
+CÓDIGO DE EXEMPLO
+var result = 10 / 5;
+Divide 10 por 5. As variáveis result terão o número 2.
+
+OPERADOR DE MÓDULO %
+Frequentemente chamado de resto ou operador de módulo, % determina todo o valor restante quando o valor à esquerda for dividido pelo valor à direita.
+
+CÓDIGO DE EXEMPLO
+var result = 10 % 5;
+var resultWithRemainder = 12 % 5;
+result será igual a 0, e resultWithRemainder será igual a 2.
+
+
+OPERADOR LÓGICO &&
+Combina duas declarações em um valor true ou false. Torna-se true apenas se os lados esquerdo e direito forem ambos true, caso contrário, é false.
+
+CÓDIGO DE EXEMPLO
+if (1 < 2 && 5 > 0) {
+    print('Yes!');
+} else {
+    print('No');
+}
+Como 1 é menor que 2 e 5 é maior que 0, o teste da if statement () é true e será impresso 'Yes!'.
+
+OPERADOR LÓGICO OU||
+Combina duas declarações em um valor true oufalse. Torna-se true se o lado esquerdo ou direito for true, e só é false se os dois lados forem false.
+
+CÓDIGO DE EXEMPLO
+if (2 === 4 || 1+1 === 2) {
+    print('At least one is true​.');
+} else {
+    print('Both are false​.');
+}
+Embora 2 seja diferente de 4, 1 + 1 é igual a 2. Como o lado direito é verdadeiro, o teste da if statement () é verdadeiro e imprime, 'At least one is true.'
+
+
+
 BLOCO DE CÓDIGO
 Uma sequência de comandos agrupados dentro de chaves {}.
 
@@ -81,3 +236,101 @@ if (learningToCode === 'fun') {
     print('I want to solve more puzzles!');
 }
 Se a variável learningToCode for igual a 'fun', o código dentro do bloco de código {} será executado.
+
+LAÇOS 
+Um laço repete as mesmas linhas de código indefinidamente. As linhas a serem repetidas são circundadas por chaves: {}. Existem diversas maneiras de executar um laço (principalmente em JavaScript).
+
+CÓDIGO DE EXEMPLO
+for (var element of [1, 2, 3, 4, 5]) {
+    print(index);
+    print('the loop will go through each number in the array');
+}
+
+var index = 0;
+
+while (index < 5) {
+    index += 1;
+    print('the while loop will go as long as index is less than 5');
+}
+Os dois laços podem ser usados para obter o mesmo resultado. Em ambos os laços for...of e while, o laço se repetirá 5 vezes.
+
+
+for
+Em JavaScript, um laço for clássico repete o mesmo código dentro do bloco {} um número determinado de vezes. Ele é definido em três partes. A primeira parte acontece antes do início do laço e define uma variável de laço (var i = 0;). A segunda parte é um teste que determina se o laço deve continuar se repetindo (i < 10;). E a terceira parte atualiza a variável do laço cada vez que ele se repete (i = i + 1).
+
+CÓDIGO DE EXEMPLO
+for (var i = 0; i < 10; i = i + 1) {
+    print(i);
+    print('the loop will go as long as i is less than 10​.');
+}
+Neste exemplo, a variável do laço (i) começa em 0. O código no bloco {} continuará se repetindo enquanto i for menor do que 10. E i é aumentado em 1 a cada laço. Esse código imprime os números de 0 a 9.
+
+
+for...of
+Um laço repete a seção de código entre chaves {}. Em JavaScript, um laço for of percorre cada elemento em uma array ou string, repetindo o código para cada elemento.
+
+CÓDIGO DE EXEMPLO
+var groceries = ['apples', 'yogurt', 'toothpaste'];
+
+for (var element of groceries) {
+    print(element);
+}
+Cada item na array groceries será impresso em sua própria linha.
+
+while
+Um laço while executa o código dentro de seu bloco até que o teste entre parênteses não seja mais verdadeiro.
+
+CÓDIGO DE EXEMPLO
+let i = 0;
+while (i < 3) {
+    print('i is less than 3');
+    i++;
+}
+print('i is now 3!');
+Contanto que i seja menor que 3, o código no bloco de comandos será repetido. Se você esquecer de aumentar i neste código, o laço while se repetirá para sempre e causará uma falha.
+
+Laços Aninhados
+Um laço aninhado é um laço dentro de outro laço. Embora os laços aninhados possam ser úteis, se você tiver muitos, pode tornar a execução do código lenta ou difícil de entender.
+
+CÓDIGO DE EXEMPLO
+for (var outerNumber of [1, 2, 3, 4, 5]) {
+    for (var nestedNumber of [6, 7, 8, 9]) {
+        print(outerNumber, nestedNumber);
+    }
+}
+Esse código imprimiria 1,6, 1,7, 1,8 e 1,9. E então outerNumber mudará para 2, e o laço interno imprimirá 2,6, depois 2,7 e assim por diante.
+
+OBJETOS
+
+{ }
+Um objeto armazena vários valores que possuem nomes de propriedade (ou chave). Isso permite que eles sejam facilmente acessados posteriormente no código.
+
+CÓDIGO DE EXEMPLO
+var groceries = {
+    apples: 5,
+    bananas: 2
+};
+apples ebananas são propriedades do objeto groceries. 5 e 2 são os valores associados a essas propriedades. groceries.apples, por exemplo, é igual a 5.
+
+Acessou uma Propriedade
+Um objeto pode armazenar várias informações dentro de uma variável. A notação de ponto é usada para acessar uma propriedade de um objeto. Por exemplo, objectName.propertyName.
+
+CÓDIGO DE EXEMPLO
+var objectName = {
+    propertyName: 'Coding is fun​.',
+    otherPropertyName: 'this is also a key value'
+};
+print(objectName​.propertyName);
+Este código imprimirá 'Coding is fun.'
+
+Encadeamento
+O encadeamento permite que os programadores apliquem várias chamadas de função diferentes ao mesmo identificador.
+
+CÓDIGO DE EXEMPLO
+svg​.append('circle')
+    ​.attr('fill', 'blue')
+    ​.attr('r', 200);
+Um círculo SVG é criado com um atributo de azul para seu preenchimento e um raio de 200 aplicado ao mesmo tempo usando .append() e duas chamadas de função .attr() encadeadas.
+
+
+
