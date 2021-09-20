@@ -332,5 +332,31 @@ svg​.append('circle')
     ​.attr('r', 200);
 Um círculo SVG é criado com um atributo de azul para seu preenchimento e um raio de 200 aplicado ao mesmo tempo usando .append() e duas chamadas de função .attr() encadeadas.
 
+FUNDAMENTOS II _________________________________________________________________________________
+
+.length
+Strings e Arrays têm uma propriedade .length. Para uma string, isso representa o número total de caracteres. Para arrays, isso representa o número total de elementos.
+
+CÓDIGO DE EXEMPLO
+var sentence = 'Some text​.';
+print(sentence​.length);
+
+
+var list = ['hi', 1, sentence];
+print(list​.length);
+O 1º comando de impressão imprimirá 10, pois há 8 letras, 1 espaço e 1 ponto final na string sentence. O 2º comando de impressão imprimirá 3, pois há 3 elementos dentro da array list.
+
+_________________________________________________________________________________
+.includes()
+Quando o método .includes() é aplicado a uma string (ou array), ele verifica se o valor entre parênteses pode ser encontrado dentro da string (ou array). Retorna verdadeiro se encontrar o valor e falso se não encontrar.
+
+CÓDIGO DE EXEMPLO
+var words = 'haystackneedlehaystack';
+console​.log(words​.includes('needle'));
+
+var list = ['i', 4, 'e'];
+console​.log(list​.includes('e'));
+O 1º resultado será true porque a string, 'needle', pode ser encontrada dentro de 'haystackneedlehaystack'. O 2º resultado também é true porque 'e' está dentro da array, no índice 2.
+
 
 
