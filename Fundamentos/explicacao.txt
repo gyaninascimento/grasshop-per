@@ -415,6 +415,26 @@ counter--;
 counter será igual a 1.
 _________________________________________________________________________________
 
+Atribuição de adição
++=
+Adiciona o valor associado à variável à esquerda com o valor à direita e atribui o valor resultante à variável existente.
+
+CÓDIGO DE EXEMPLO
+var myNumber = 10;
+myNumber += 5;
+myNumber será igual a 15.
+
+_________________________________________________________________________________
+Atribuição de subtração
+Subtrai o valor associado à variável à esquerda pelo valor à direita e atribui o valor resultante à variável existente.
+
+CÓDIGO DE EXEMPLO
+var myNumber = 10;
+myNumber -= 5;
+myNumber será igual a 5.
+_________________________________________________________________________________
+
+
 
 
 
