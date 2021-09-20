@@ -368,6 +368,53 @@ quote = quote​.replace('never', 'goodbye');
 print(quote);
 O método .replace() procura por 'never' na citação. É sensível a maiúsculas e minúsculas, então o resultado final é Never say goodbye.
 _________________________________________________________________________________
+Escopo Variável
+Na programação, o escopo determina onde uma variável pode ser usada. As variáveis podem ter escopo global ou local.
+Uma variável global pode ser usada em todo o código. Uma variável local só pode ser usada dentro do bloco onde é declarada.
+A chave var geralmente cria variáveis globais. A chave let permite que você crie variáveis locais.
+No código abaixo, a variável myLocalNumber é declarada usando a chave let. Isso significa que ele só existe dentro do bloco da if statement. O impossibleCalculation não funcionará porque a variável myLocalNumber não existe fora da if statement.
+
+var myGlobalNumber = 5;
+ if (myGlobalNumber > 3) { 
+let myLocalNumber = 4; 
+} 
+var impossibleCalculation = myGlobalNumber + myLocalNumber
+
+É mais seguro usar variáveis locais do que as variáveis globais, especialmente se as variáveis tiverem nomes semelhantes.
+_________________________________________________________________________________
+? :
+Operadores ternários são uma maneira de escrever if...else statements com menos código. Eles começam com o teste e, depois do símbolo ?, é o código rodado se o teste for verdadeiro. A última parte, após o símbolo :, é o código que será rodado se o teste for falso.
+
+CÓDIGO DE EXEMPLO
+if (1 === 1) {
+    print('all is right in the universe');
+} else {
+    print('something is wrong​.​.​.');
+}
+
+1 === 1 ? print('all is right in the universe') : print('something is wrong​.​.​.');
+Veja um exemplo de uma if...else statement testando se 1 é igual a 1; e o mesmo código usando um operador ternário.
+_________________________________________________________________________________
+
+Operador de incremento ++
+Adiciona 1 a um valor numérico existente.
+Por exemplo, count++ é igual a count = count + 1.
+
+CÓDIGO DE EXEMPLO
+var counter = 1;
+counter++;
+counter será igual a 2.
+
+_________________________________________________________________________________
+Operador de decremento --
+Subtrai 1 de um valor numérico existente.
+
+CÓDIGO DE EXEMPLO
+var counter = 2;
+counter--;
+counter será igual a 1.
+_________________________________________________________________________________
+
 
 
 
