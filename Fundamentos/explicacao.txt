@@ -462,7 +462,7 @@ A função print() chama a função sumNumbers com os argumentos 3 e 5. sumNumbe
 _________________________________________________________________________________
 
 Recursão usada
-Recursão é quando uma função chama a si mesma a partir de sua própria definição. Deve haver sempre uma condição final, ou caso básico, para que a função não continue chamando ela mesma para sempre.
+Recursão é quando uma função chama a si mesma a partir de sua própria definição. Deve haver sempre uma condição final, ou caso básico, para que a função não continue chamando ela mesma para sempre.A recursão para quando uma condição final, ou caso básico, é atendido.
 
 CÓDIGO DE EXEMPLO
 function ftl(n) {
@@ -476,27 +476,7 @@ console​.log(ftl(3));
 A função ftl pega um número n e multiplica por todos os números inteiros antes dele. Portanto, o ftl(3) é 3 2 1. Cada vez que essa função efetua a recursão, ela subtrai 1 do valor do argumento até que o caso básico de n === 1 seja encontrado. ftl(3)→(3 * ftl(2)) ftl(2)→(2 * ftl(1)) ftl(1)→ 1 Portanto, ftl(3) retorna (3 * ( 2 * (1))) que é 6.
 
 _________________________________________________________________________________
-Substituição de recursão
-Neste desafio, você usará uma função para corrigir recursivamente todos os erros de digitação de uma string.
 
-INSTRUÇÕES
-Na última linha da declaração de função updateAllNames():
-
-Altere a return string para return updateAllNames()
-Atualize os argumentos para (string, oldPart, newPart) respectivamente
-_________________________________________________________________________________
-
-function updateAllNames(string, oldPart, newPart, ___) {
-  if (string.includes(oldPart) === false) {
-    return string;
-  }
-  string = string.replace(oldPart, newPart);
-  return updateAllNames(string, oldPart, newPart);
-};
-console.log(travelDocument);
-console.log(updateAllNames(travelDocument, 'grasshoper', 'grasshopper'));
-
-_________________________________________________________________________________
 
 
 
