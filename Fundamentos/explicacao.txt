@@ -434,6 +434,34 @@ myNumber -= 5;
 myNumber será igual a 5.
 _________________________________________________________________________________
 
+function() {}
+Uma função salva um bloco de código. É possível executá-lo sempre que fizer referência ao nome da função. O código dentro do bloco {} será rodado quando o nome da função for chamado.
+
+CÓDIGO DE EXEMPLO
+function addSquare() {
+    svg​.append('rect')​.attr('width',10)​.attr('height',10);
+}
+addSquare();
+A palavra-chave function diz ao código que você deseja criar uma função. A função addSquare criará um novo retângulo SVG com altura e largura de 10. Para rodar o código dentro da função, o nome da função precisa ser chamado: addSquare();
+
+_________________________________________________________________________________
+
+return
+Quando uma função é concluída, a saída pode ser enviada de volta para o local de onde foi chamada. Para isso, é usada a palavra-chave return.
+A palavra-chave retorna diz a uma função para parar de executar e retorna um valor.
+
+CÓDIGO DE EXEMPLO
+function sumNumbers(a, b) {
+    var answer = a + b;
+    return answer;
+}
+
+print(sumNumbers(3, 5));
+A função print() chama a função sumNumbers com os argumentos 3 e 5. sumNumbers soma os argumentos e envia o resultado de volta usando return. O comando print() obtém a resposta e, em seguida, imprime o número 8.
+
+_________________________________________________________________________________
+
+
 
 
 
