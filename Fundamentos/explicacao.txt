@@ -477,7 +477,19 @@ A função ftl pega um número n e multiplica por todos os números inteiros ant
 
 _________________________________________________________________________________
 
+.length
+Strings e Arrays têm uma propriedade .length. Para uma string, isso representa o número total de caracteres. Para arrays, isso representa o número total de elementos.
 
+CÓDIGO DE EXEMPLO
+var sentence = 'Some text​.';
+print(sentence​.length);
+
+
+var list = ['hi', 1, sentence];
+print(list​.length);
+O 1º comando de impressão imprimirá 10, pois há 8 letras, 1 espaço e 1 ponto final na string sentence. O 2º comando de impressão imprimirá 3, pois há 3 elementos dentro da array list.
+
+_________________________________________________________________________________
 
 
 
