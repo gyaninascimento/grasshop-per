@@ -491,6 +491,120 @@ O 1º comando de impressão imprimirá 10, pois há 8 letras, 1 espaço e 1 pont
 
 _________________________________________________________________________________
 
+[]
+Na maioria das linguagens de programação, incluindo JavaScript, as arrays são indexadas a partir de 0. O primeiro item em uma array tem o índice 0. Por exemplo, myArray[0] acessa o primeiro item. Enquanto myArray[3] acessa o 4º item.
+
+CÓDIGO DE EXEMPLO
+var groceries = ['apples', 'bananas', 'oranges']; 
+var fruit = groceries[1];
+A variável fruit contém o segundo item da array, que é 'bananas'.
+
+_________________________________________________________________________________
+
+Argumento
+Um argumento é uma informação extra fornecida a uma função que diz como ela deve ser executada.
+
+Os argumentos são colocados entre parênteses de uma chamada de função.
+
+Nem todas as funções requerem argumentos e algumas funções requerem vários argumentos.
+
+CÓDIGO DE EXEMPLO
+drawBox(red);
+print('hello');
+Neste exemplo, red é o argumento para a função drawBox(). Ele diz à função para desenhar uma caixa vermelha.
+
+'hello' é o argumento para a função print(). Ele diz à função o que deve ser impresso.
+
+_________________________________________________________________________________
+
+.pop()
+Remove um valor no final de uma array.
+
+CÓDIGO DE EXEMPLO
+var myArray = [5];
+myArray​.pop();
+myArray ficará vazio assim que o código for rodado.
+
+_________________________________________________________________________________
+.push()
+Adiciona um valor ao final de uma array.
+
+CÓDIGO DE EXEMPLO
+var myArray = [];
+myArray​.push(1);
+myArray será igual a [1].
+_________________________________________________________________________________
+.slice()
+Cria uma array que é um subconjunto de outra array. São necessários 2 argumentos para indicar onde a nova array começará e terminará (fim não incluído). Os argumentos usam indexação da array.
+
+CÓDIGO DE EXEMPLO
+var myArray = ['oranges', 'apples', 'bananas', 'carrots', 'milk'];
+var newArray = myArray​.slice(1, 3);
+newArray será igual a ['apples', 'bananas'].
+
+_________________________________________________________________________________
+let
+let declara uma variável como var, exceto que tem um escopo diferente. O escopo de uma variável é a seção do código onde ela pode ser usada. Um let só pode ser usado dentro do bloco de código {}onde é criado.
+
+CÓDIGO DE EXEMPLO
+var x = 100;
+if (x > 0) {
+    let x = 25;
+}
+print(x);
+Uma variável chamada x é criada usando var e definida como 100. A if statement é verdadeira, então a variável let x é criada e definida como 25. A variável let permanece dentro do bloco de código {}. A print(x), que está fora do bloco de código da if statement, usa o valor de var x = 100.
+
+_________________________________________________________________________________
+
+.includes()
+Quando o método .includes() é aplicado a uma string (ou array), ele verifica se o valor entre parênteses pode ser encontrado dentro da string (ou array). Retorna verdadeiro se encontrar o valor e falso se não encontrar.
+
+CÓDIGO DE EXEMPLO
+var words = 'haystackneedlehaystack';
+console​.log(words​.includes('needle'));
+
+var list = ['i', 4, 'e'];
+console​.log(list​.includes('e'));
+O 1º resultado será true porque a string, 'needle', pode ser encontrada dentro de 'haystackneedlehaystack'. O 2º resultado também é true porque 'e' está dentro da array, no índice 2.
+
+_________________________________________________________________________________
+
+.replace()
+O método .replace() pode ser anexado a uma string para alterar uma seção dela. O 1º argumento será usado para encontrar a 1ª correspondência exata e, em seguida, o 2º argumento a substituirá.
+
+CÓDIGO DE EXEMPLO
+var quote = 'Never say never';
+quote = quote​.replace('never', 'goodbye');
+print(quote);
+O método .replace() procura por 'never' na citação. É sensível a maiúsculas e minúsculas, então o resultado final é Never say goodbye
+
+_________________________________________________________________________________
+...
+O operador de propagação é usado para adicionar todos os elementos individuais de uma array em outra array. Pode-se pensar nele como se os colchetes [] fossem retirados para que apenas os itens dentro dele permanecessem.
+
+CÓDIGO DE EXEMPLO
+let dogs = ['Retriever', 'Shepherd', 'Terrier'];
+let pets = ['Hedgehog', ​.​.​.dogs, 'Turtle'];
+for (let animal of pets) {
+    console​.log(animal);
+}
+Sem o operador de propagação (...) antes de dogs, as 3 strings 'Retriever','Shepherd','Terrier' seriam impressas como um único item e o resultado seria:
+
+Hedgehog 
+Retriever,Shepherd,Terrier 
+Turtle 
+Adicionar o operador de propagação (...dogs) transforma o resultado em 5 linhas separadas:
+
+Hedgehog 
+Retriever 
+Shepherd 
+Terrier 
+Turtle 
+_________________________________________________________________________________
+
+
+
+
 
 
 
