@@ -602,6 +602,17 @@ Terrier
 Turtle 
 _________________________________________________________________________________
 
+let
+let declara uma variável como var, exceto que tem um escopo diferente. O escopo de uma variável é a seção do código onde ela pode ser usada. Um let só pode ser usado dentro do bloco de código {}onde é criado.
+
+CÓDIGO DE EXEMPLO
+var x = 100;
+if (x > 0) {
+    let x = 25;
+}
+print(x);
+Uma variável chamada x é criada usando var e definida como 100. A if statement é verdadeira, então a variável let x é criada e definida como 25. A variável let permanece dentro do bloco de código {}. A print(x), que está fora do bloco de código da if statement, usa o valor de var x = 100.
+_________________________________________________________________________________
 
 
 
