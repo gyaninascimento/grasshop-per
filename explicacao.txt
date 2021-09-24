@@ -615,6 +615,42 @@ Uma variável chamada x é criada usando var e definida como 100. A if statement
 _________________________________________________________________________________
 
 
+Entrada e saída
+
+Ao resolver um problema com funções, normalmente é bom começar pensando "qual é a entrada?" e "qual é a saída?"
+
+A entrada é a informação que a função precisa para responder à pergunta que você está fazendo.
+
+A saída é a resposta à sua pergunta.
+
+Por exemplo, se você perguntasse "Quanto tempo vou demorar para chegar em casa?" a entrada pode ser a distância até sua casa e a velocidade média de seu carro. A saída seria a duração.
+Também é útil pensar em quais tipos de dados a entrada e a saída estarão. Você já conhece muitos tipos de dados diferentes:
+
+strings
+números
+arrays
+objetos
+boolean (verdadeiro ou falso)
+
+Ao criar uma função, você pode especificar a entrada usando parâmetros. Parâmetros são como variáveis usadas apenas na declaração de função.
+
+Um comando de retorno geralmente é usado em uma função para retornar a saída.
+Outra coisa a considerar ao resolver problemas usando funções é a diferença entre parâmetros e argumentos.
+Um parâmetro é usado ao declarar a função. Um argumento é usado ao chamar uma função.
+
+function sum(num1, num2) {
+  return num1 + num2;
+}
+
+let score1 = 16;
+let score2 = 11;
+
+sum(score1, score2);
+No exemplo acima, num1 e num2 são parâmetros. Eles existem apenas dentro da declaração de função.
+score1 e score2 são ambos argumentos. Eles são variáveis definidas antes de serem usadas em uma chamada de função.
+E, por último, lembre-se de que uma função não será executada até que seja chamada.
+_________________________________________________________________________________
+
 
 
 
