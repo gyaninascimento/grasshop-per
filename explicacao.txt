@@ -651,7 +651,53 @@ score1 e score2 são ambos argumentos. Eles são variáveis definidas antes de s
 E, por último, lembre-se de que uma função não será executada até que seja chamada.
 _________________________________________________________________________________
 
+Funções auxiliares
 
+Frequentemente, o código pode ser dividido em vários componentes ou funções.
+
+Às vezes, pode ser útil criar primeiro essas funções individuais separadamente e, em seguida, reuni-las em uma função maior.
+
+Esses componentes menores funções podem ser chamados de funções auxiliares.
+
+function bigFunction (price1, price2) { 
+  let total = price1 + price2;
+  return tax(total);
+}
+No código acima, tax() é a função auxiliar.
+
+_________________________________________________________________________________
+Vários retornos
+
+A palavra-chave retorno é usada dentro de uma declaração de função para finalizar a função e enviar de volta a saída. Por exemplo:
+
+function invert(x) {
+  return 1 / x; 
+} 
+Quando a função invert() é chamada, ela mostrará o valor de 1 / x.
+
+Assim que um retorno for executado, a função estará concluída. Se houver algum código após um retorno, ele será ignorado. Por exemplo:
+
+function invert(x) {
+  return 1 / x;
+  console​.log('done');
+}
+Cuando a função invert() é chamada, ela mostrará o valor de 1 / x, mas não registrará 'done', pois vem depois da execução do return.
+
+Pode ser útil ter vários retornos em uma declaração de função contanto que se espere que apenas o retorno 1 seja executado. Por exemplo:
+
+function invert(x) {
+  if (x === 0) {
+    return 'input was zero';
+  } else {
+    return 1 / x;
+  }
+}
+Dependendo da entrada, a função invert() retorna 1 dividido pela entrada ou a string, 'input was zero'.
+
+console.log(invert(0)) indica 'input was zero'
+console.log(invert(4)) indica 0.25
+
+_________________________________________________________________________________
 
 
 
