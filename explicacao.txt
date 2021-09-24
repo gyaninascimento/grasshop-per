@@ -696,6 +696,28 @@ Dependendo da entrada, a função invert() retorna 1 dividido pela entrada ou a 
 
 console.log(invert(0)) indica 'input was zero'
 console.log(invert(4)) indica 0.25
+A função ainda funcionará usando uma if statement em vez de uma if...else statement.
+
+function invert(x) {
+  if (x === 0) {
+    return 'input was zero';
+  }
+  return 1 / x;
+}
+Se x for zero, então a função vai retornar 'input was zero' e o resto do código é ignorado
+Se x não for zero, então a função vai retornar o valor de 1 / x
+A seguinte função vai retornar false se qualquer número em uma array de números for maior que 4.
+
+Caso contrário, a função vai retornar true
+
+function lessThanFive(numbers) {
+  for (let number of numbers) {
+    if (number > 4) {
+      return false;
+    }
+  }
+  return true; 
+}
 
 _________________________________________________________________________________
 
