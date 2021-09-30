@@ -749,6 +749,37 @@ function sum(number1, number2) {
 Este código tem um erro. A função sum() deve retornar number1 + number2, entretanto, um erro de digitação está fazendo com que ela retorne number1 + number1.
 
 _________________________________________________________________________________
+Truthy e Falsy
+Em Javascript, qualquer valor pode se comportar como um boolean em um teste, como em uma if statement ou ternário.
+
+Existem 6 valores falsy, o que significa que se comportam como false, enquanto todo o resto é truthy.
+
+Os 6 valores falsy são:
+
+false: o valor boolean false
+0: o número zero
+'': uma string vazia
+NaN: significa "Not a Number" (não é um número), geralmente causado por erros matemáticos
+undefined: o valor de uma variável antes de ser atribuído um valor
+null: um valor em branco que pode ser atribuído a uma variável.
+Todos os outros valores são verdadeiros.
+
+CÓDIGO DE EXEMPLO
+if (0) {
+    console​.log('falsy');
+}
+
+if (1) {
+    console​.log('truthy');
+}
+0 é um dos seis valores falsy, então a 1ª if statement o tratará como false.
+
+1 é truthy porque não é um dos seis valores falsos, então a if statement o tratará como true.
+
+Qualquer valor que não seja falsy é chamado de truthy. Isso significa todos os números diferentes de 0, qualquer string que não esteja vazia, qualquer objeto ou array, etc.
+
+Isso significa que se você colocar qualquer um desses valores truthy dentro de um teste if statement, o teste será aprovado e o código será executado.
+_________________________________________________________________________________
 
 
 
