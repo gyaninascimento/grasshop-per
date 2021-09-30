@@ -737,5 +737,18 @@ O laço for...of itera através da array de números e adiciona cada número à 
 Após o laço for...of terminar de iterar, sum é retornado.
 
 _________________________________________________________________________________
+bug Erro
+Um erro é uma falha no código que faz com que um programa se comporte de maneira inesperada.
+
+Erros são comuns durante a programação. Encontrá-los e corrigi-los é uma parte normal da programação.
+
+CÓDIGO DE EXEMPLO
+function sum(number1, number2) {
+    return number1 + number1;
+}
+Este código tem um erro. A função sum() deve retornar number1 + number2, entretanto, um erro de digitação está fazendo com que ela retorne number1 + number1.
+
+_________________________________________________________________________________
+
 
 
