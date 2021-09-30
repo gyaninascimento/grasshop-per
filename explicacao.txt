@@ -721,6 +721,21 @@ function lessThanFive(numbers) {
 
 _________________________________________________________________________________
 
+Em muitas funções, é útil declarar uma variável para a função para depois retornar. Por exemplo:
 
+function calculateSum(numberArray) {
+  let sum = 0;
+  for (let num of numberArray) {
+    sum += num;
+  }
+  return sum;
+}
+No exemplo de código acima, a variável sum foi declarada e recebeu o valor 0.
+
+O laço for...of itera através da array de números e adiciona cada número à sum.
+
+Após o laço for...of terminar de iterar, sum é retornado.
+
+_________________________________________________________________________________
 
 
